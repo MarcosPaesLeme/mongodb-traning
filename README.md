@@ -35,22 +35,24 @@ $ npm install
 ## Running the app
 
 To run this project you will need have a mongodb database, you can use docker,
-[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624308&gclid=Cj0KCQjwvYSEBhDjARIsAJMn0ljtfOZa3YE-evCn36OSd5nIBN3L3i0dAq7SsUA0OewDNraXIVrFWCoaAnfrEALw_wcB), [IBM Cloud](https://cloud.ibm.com/catalog/services/databases-for-mongodb) or [Google CLoud](https://cloud.google.com/mongodb?hl=pt-br)
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624308&gclid=Cj0KCQjwvYSEBhDjARIsAJMn0ljtfOZa3YE-evCn36OSd5nIBN3L3i0dAq7SsUA0OewDNraXIVrFWCoaAnfrEALw_wcB), [IBM Cloud](https://cloud.ibm.com/catalog/services/databases-for-mongodb) or [Google Cloud](https://cloud.google.com/mongodb?hl=pt-br)
 
-If you choose to run locally, you will need replace some variables in this projects.
-
-After you replace some variables, connect to your database and
-insert data. The data is place in [Person.json](docs/Persons.json)
+With you choose to run locally, run this commands:
 
 ```bash
 
 # Pull image from docker hub
 npm run mongodb
 
-# Execute a container
+# Dont forget to replace the <USERNAME> and <PASSWORD> before execute this command
 npm run mongodb:run
 
 ```
+
+After you run create your database you will need replace the connection string into **app.modules.ts**
+
+Connect to your database and
+insert data. The data is place in [Person.json](docs/Persons.json)
 
 Scripts commands
 
