@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Built with [Nest](https://github.com/nestjs/nest) framework using Express.
 
 ## Installation
 
@@ -33,6 +33,26 @@ $ npm install
 ```
 
 ## Running the app
+
+To run this project you will need have a mongodb database, you can use docker,
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_brazil_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624308&gclid=Cj0KCQjwvYSEBhDjARIsAJMn0ljtfOZa3YE-evCn36OSd5nIBN3L3i0dAq7SsUA0OewDNraXIVrFWCoaAnfrEALw_wcB), [IBM Cloud](https://cloud.ibm.com/catalog/services/databases-for-mongodb) or [Google CLoud](https://cloud.google.com/mongodb?hl=pt-br)
+
+If you choose to run locally, you will need replace some variables in this projects.
+
+After you replace some variables, connect to your database and
+insert data. The data is place in [Person.json](docs/Persons.json)
+
+```bash
+
+# Pull image from docker hub
+npm run mongodb
+
+# Execute a container
+npm run mongodb:run
+
+```
+
+Scripts commands
 
 ```bash
 # development
@@ -45,28 +65,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Marcos Paes Leme de Souza](https://github.com/MarcosPaesLeme)
+- Linkedin - [https://www.linkedin.com/in/marcospaesleme/](https://www.linkedin.com/in/marcospaesleme/)
 
 ## License
 
